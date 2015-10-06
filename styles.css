@@ -1,0 +1,18 @@
+
+a {
+	color: white;
+}
+
+li {
+	padding: 10px;
+	background-color: blue;
+	color: white;
+	margin: 5px;
+	
+	height: 50px;
+	display: inline;
+}
+
+nav {
+	backgroud-color: pink;
+}
