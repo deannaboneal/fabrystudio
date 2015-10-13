@@ -1,17 +1,45 @@
-
 a {
 	color: white;
 }
 
 li {
 	padding: 10px;
-	background-color: blue;
+	background-color: #666564;
 	color: white;
-	margin: 5px;	
-	height: 50px;
 	display: inline;
 }
 
 nav {
 	backgroud-color: pink;
 }
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+/* Class Selectors */
+/*max width of parent container and auto adjust height*/
+.image {
+	width: 100%;
+	height: auto;
+}
+
+/* ID Selectors */
+.logo {
+	text-align: center;
+}
+
+/* CODE FOR CREATING OVERLAY OF IMAGES?
+
+  #overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display: none;
+}*/
