@@ -1,35 +1,68 @@
-a {
-	color: white;
-}
-
-li {
-	padding: 10px;
-	background-color: #666564;
-	color: white;
-	display: inline;
-}
-
-nav {
-	backgroud-color: pink;
+/*Layout Styles*/
+header {
+	
 }
 
 body {
-  color: #878787;
   margin: 0;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
-/* Class Selectors */
+a {
+	color: #white;
+	font: "Helvetica Neue", Helvetica, Arial, sans-serif; /*trying to style the navigation links*/
+}
+
+/*Navigation & Menu Styles*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#menu{
+	background-color: #1c029e;
+	text-align: center;
+	max-height: 100%;
+	max-width: 100%;
+	padding: 0;
+}
+
+li {
+	padding: 20px;
+	background-color: #1c029e;
+	color: white;
+	text-decoration: none;
+	max-width: 100%;
+	float: left;
+}
+
+a {
+	display: block;
+	width: 100px;
+}
+a:link {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+  
 /*max width of parent container and auto adjust height*/
 .image {
 	width: 100%;
 	height: auto;
 }
 
-/* ID Selectors */
+
 .logo {
 	text-align: center;
+	padding: 20px;
 }
 
 /* CODE FOR CREATING OVERLAY OF IMAGES?
