@@ -1,0 +1,53 @@
+/*Layout Styles*/
+
+body {
+    margin: 0;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+nav {
+    padding: 15px;
+    background-color: purple;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    width: 150px;
+    padding: 10px;
+    display: inline-block;
+    background-color: #1c029e;
+    text-decoration: none;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: gray;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: yellow;
+}
+
+
+/* selected link */
+
+a:active {
+    color: pink;
+}
