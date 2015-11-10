@@ -1,9 +1,20 @@
-/*Layout Styles*/
+/*******************************
+Basic Page Styles
+*******************************/
 
 body {
     margin: 0;
-    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 1em/1.5; 
+    font-family: 'Overlock', cursive;
     text-align: center;
+}
+
+/*******************************
+Header
+*******************************/
+
+header {
+    background-color: #8dabc4;
 }
 
 p {
@@ -11,6 +22,9 @@ p {
     padding: 0 25%;
 }
 
+/*******************************
+Price Table
+*******************************/
 caption {
     background-color: #8dabc4;
     font-weight: bold;
@@ -24,13 +38,19 @@ table#table1 {
     margin-right: auto;    
 }
 
+/*******************************
+Footer
+*******************************/
+
 footer {
     text-align: justify;
-    padding: 15px 25%;
+    padding: 15px ;
     font-size: small;
 }
 
-
+/*******************************
+Navigation
+*******************************/
 nav {
     padding: 15px;
     background-color: #878787;
