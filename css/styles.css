@@ -6,6 +6,7 @@ body {
     margin: 0;
     font: 1em/1.5; 
     font-family: 'Overlock', cursive;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -20,6 +21,12 @@ header {
 p {
     text-align: justify;
     padding: 0 25%;
+}
+
+#logo {
+    max-width: 40%;
+    min-width: 250px;
+    
 }
 
 /*******************************
@@ -100,6 +107,10 @@ a:active {
     color: #8dabc4􀀗;
 }
 
+#selected {
+    text-color: #fd793e;
+}
+
 #email_link {
     color: #1c029e;
     font-weight: bolder
@@ -114,7 +125,7 @@ Scrolling Gallery
 }
 
 #scroller .innerScrollArea {
-    overflow: inherit; /*maybe should be set to "hidden"?*/
+    overflow: hidden;
     position: absolute;
     left: 0;
     right: 0;
