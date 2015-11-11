@@ -51,6 +51,12 @@ footer {
 /*******************************
 Navigation
 *******************************/
+a {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 20px;
+}
+
 nav {
     padding: 15px;
     background-color: #878787;
@@ -76,20 +82,17 @@ a:link {
     text-decoration: none;
 }
 
-
 /* visited link */
 
 a:visited {
     color: white;
 }
 
-
 /* mouse over link */
 
-a:hover {
+a:hover, a:focus {
     color: #fd793e;
 }
-
 
 /* selected link */
 
@@ -100,4 +103,34 @@ a:active {
 #email_link {
     color: #1c029e;
     font-weight: bolder
+}
+
+/*******************************
+Scrolling Gallery
+*******************************/
+
+#scroller {
+    position: relative;
+}
+
+#scroller .innerScrollArea {
+    overflow: inherit; /*maybe should be set to "hidden"?*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#scroller ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#scroller li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: absolute;
 }

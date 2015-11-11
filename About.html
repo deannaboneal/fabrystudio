@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic,900" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-	<script src="scripts.js"></script>
 <body>
 	<header>
 		<div class="logo">
@@ -27,12 +26,41 @@
 		<p>Fabry Studio has been in business for over 50 years in Nashville, Tennessee. Walden S. Fabry was a studio portrait photographer who moved to Nashville, TN from Peoria, IL in the 1940's. He opened Fabry studio and began photographing several country music artists and other entertainers in the area, including Minnie Pearl who influenced his move to Nashville. Mr. Fabry sold his studio to Tom Berens, current owner, in the 1970's. While wedding photography, school pictures, and even aerial photography were a part of the historical services provided, the main focus shifted toward mass reproduction as the country music scene dominated Music City.</p>
         <h1>TODAY</h1>
 		<p> Today, now fully engulfed in the digital age, Fabry Studio's sole focus is on digitally mass reproducing publicity photos for its clients' promotional needs. Fabry Studio has stood the test of time, and while our physical location is Nashville, TN, we cater to clients worldwide. In fact, we are a proud service provider for USO tours. Our clients number among the biggest and best known in the publishing and recording industry. You generally won't find us in advertisements or other publications. Our customers come back for the quality and reliability they can count on over and over again.</p>
-        <div class="image">
-           <img src="images/SwonBrothers.jpg" /><img src="images/LeslieGrace.jpg"/><img src="images/Yandel.jpg"/><img src="images/GarySinise.jpg"/>
+        <div id="scroller" style="width: 500px; height: 625px; margin: 0 auto;">
+            <div class="innerScrollArea">
+                <ul>
+                    <!-- Define photos here -->
+                    <li><img src="images/SwonBrothers.jpg" width="495" height="625" /></li>
+                    <li><img src="images/LeslieGrace.jpg" width="500" height="625" /></li>
+                    <li><img src="images/Yandel.jpg" width="500" height="625" /></li>
+                    <li><img src="images/GarySinise.jpg" width="446" height="625" /></li>
+                </ul>
+            </div>
         </div>
+        <!--<div class="image">
+           <img src="images/SwonBrothers.jpg" /><img src="images/LeslieGrace.jpg"/><img src="images/Yandel.jpg"/><img src="images/GarySinise.jpg"/>
+        </div> -->
         
     </section>
 	<footer>
-	</footer>	
+	</footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        var scroller = $('#scroller div.innerScrollArea');
+        var scrollerContent = scroller.children('ul');
+        scrollerContent.children().clone().appendTo(scrollerContent);
+        var curX = 0;
+        scrollerContent.children().each(function(){
+            var $this = $(this);
+            $this.css('left', curX);
+            curX += $this.outerWidth(true);
+        });
+        var fullW = curX / 2;
+        var viewportW = scroller.width();
+
+        scroller.css('overflow-x', 'auto');
+    });
+    </script>
 </body>
 </html>
