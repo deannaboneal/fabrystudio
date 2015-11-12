@@ -50,7 +50,7 @@ Footer
 *******************************/
 
 footer {
-    text-align: justify;
+    text-align: right;
     padding: 15px ;
     font-size: small;
 }
@@ -112,7 +112,7 @@ a:active {
 }
 
 #email_link {
-    color: #1c029e;
+    color: #fd793e;
     font-weight: bolder
 }
 
