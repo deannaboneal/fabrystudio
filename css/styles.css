@@ -10,6 +10,21 @@ body {
     text-align: center;
 }
 
+#history, #today {
+    display: inline-block;
+    width: 49.5%;    
+}
+
+#history p {
+    padding: 10px 25px;
+    float: left;
+}
+
+#today p {
+    padding: 10px 25px;
+    float: right;
+}
+
 /*******************************
 Header
 *******************************/
@@ -83,7 +98,6 @@ li {
     text-decoration: none;
 }
 
-
 /* unvisited link */
 
 a:link {
@@ -95,6 +109,13 @@ a:link {
 
 a:visited {
     color: white;
+}
+
+/* active link */
+
+a.selected {
+    font-weight: bolder;
+    font-size: 1.4em;
 }
 
 /* mouse over link */
@@ -139,7 +160,9 @@ Scrolling Gallery
     position: absolute;
 }
 
-a.selected {
-    font-weight: bolder;
-    font-size: 1.4em;
-}
+
+/*******************************
+Media Query
+*******************************/
+
+
