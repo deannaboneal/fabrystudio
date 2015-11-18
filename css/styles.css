@@ -20,7 +20,7 @@ header {
 
 p {
     text-align: justify;
-    padding: 0 25%;
+    padding: 0 20%;
 }
 
 #logo {
@@ -49,10 +49,11 @@ table#table1 {
 Footer
 *******************************/
 
-footer {
+#copyright {
     text-align: right;
-    padding: 15px ;
+    padding: 15px;
     font-size: small;
+    margin-right: 25%;
 }
 
 /*******************************
@@ -71,6 +72,7 @@ nav {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 li {
@@ -97,23 +99,13 @@ a:visited {
 
 /* mouse over link */
 
-a:hover, a:focus {
+nav a:hover, a:focus {
     color: #fd793e;
-}
-
-/* selected link */
-
-a:active {
-    color: #8dabc4􀀗;
-}
-
-#selected {
-    text-color: #fd793e;
 }
 
 #email_link {
     color: #fd793e;
-    font-weight: bolder
+    font-weight: bolder;
 }
 
 /*******************************
@@ -140,8 +132,14 @@ Scrolling Gallery
 }
 
 #scroller li {
+    width: 100%;
     padding: 0;
     margin: 0;
     list-style-type: none;
     position: absolute;
+}
+
+a.selected {
+    font-weight: bolder;
+    font-size: 1.4em;
 }
