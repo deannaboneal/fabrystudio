@@ -3,11 +3,11 @@ Basic Page Styles
 *******************************/
 
 body {
-    margin: 0;
-    font: 1em/1.5; 
+    margin: 0; 
     font-family: 'Overlock', cursive;
     font-weight: bold;
     text-align: center;
+    font-size: large;
 }
 
 #history, #today {
@@ -25,12 +25,24 @@ body {
     float: right;
 }
 
+p.services {
+    padding: 10px 30%;
+    font-weight: normal;
+}
+
+p.fine-print, footer.fine-print {
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    color: #878787;
+}
+
 /*******************************
 Header
 *******************************/
 
 header {
-    background-color: #8dabc4;
+    background-color: rgba(156, 206, 206, 1);
 }
 
 p {
@@ -41,6 +53,7 @@ p {
 #logo {
     max-width: 40%;
     min-width: 250px;
+    padding: 10px 0 0 0;
     
 }
 
@@ -48,7 +61,7 @@ p {
 Price Table
 *******************************/
 caption {
-    background-color: #8dabc4;
+    background-color: rgba(156, 206, 206, 1);
     font-weight: bold;
 }
 
@@ -115,7 +128,7 @@ a:visited {
 
 a.selected {
     font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 /* mouse over link */
@@ -164,5 +177,17 @@ Scrolling Gallery
 /*******************************
 Media Query
 *******************************/
+
+@media only screen and (max-width: 499px) {
+
+    #scroller {
+        display: none;
+    }
+    p {
+        text-align: left;
+    }
+
+}
+    
 
 
