@@ -37,6 +37,10 @@ p.fine-print, footer.fine-print {
     color: #878787;
 }
 
+section.contact-info {
+    padding: 0 0 80px 0;
+}
+
 /*******************************
 Header
 *******************************/
@@ -142,6 +146,7 @@ nav a:hover, a:focus {
     font-weight: bolder;
 }
 
+
 /*******************************
 Scrolling Gallery
 *******************************/
@@ -178,15 +183,26 @@ Scrolling Gallery
 Media Query
 *******************************/
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 1081px) {
 
     #scroller {
         display: none;
     }
     p {
         text-align: left;
+        padding: 0 1% 0 5%;
+    }    
+    p.services {
+        padding: 5px 10%;
+        font-weight: normal;
     }
-
+    #history, #today{
+        display: block;
+        width: 100%;   
+    }
+    #copyright {
+        margin-right: 1%;
+    }
 }
     
 
